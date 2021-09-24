@@ -1,0 +1,201 @@
+* {
+  scroll-behavior: smooth;
+  margin: 40;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: darkblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  width: 45px;
+  height: 45px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0 20px 0 20px;
+  font-family: -apple-system, Roboto, sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+.search-box {
+  padding-right: 80px;
+}
+form {
+  position: relative;
+  width: 200px;
+  margin: 0;
+}
+input {
+  width: 100%;
+  height: 22px;
+  padding-left: 10px;
+  border: 2px solid #7ba7ab;
+  border-radius: 5px;
+  outline: none;
+  background-color: azure;
+  color: black;
+}
+button {
+  position: absolute;
+  top: 0;
+  border-radius: 5px;
+  border: 2px solid #7ba7ab;
+  background-color: azure;
+}
+.promo_img {
+  background-image: url(./img/altai.jpeg);
+  height: 700px;
+  margin-bottom: 0px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.h1 {
+  font-size: xx-large;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+.joint {
+  background-color: tomato;
+  height: 40px;
+  width: 200px;
+  font-size: x-large;
+  text-align: center;
+}
+.promo_slogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border: thin;
+  background-color: darkblue;
+  color: white;
+  font-family: -apple-system, Roboto, sans-serif;
+  text-align: center;
+  font-size: medium;
+  margin-top: 0px;
+}
+.article {
+  border: solid;
+  font-family: -apple-system, Roboto, sans-serif;
+  padding: 10px 10px 10px 10px;
+}
+.desicion {
+  display: flex;
+  justify-content: space-around;
+  background-color: darkblue;
+  color: white;
+  align-items: center;
+}
+.footer {
+  display: block;
+  width: 100%;
+  background-color: darkblue;
+  color: rgb(255, 225, 0);
+  font-weight: bold;
+  font-family: -apple-system, Roboto, sans-serif;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 0px;
+}
+.address {
+  font-family: -apple-system, Roboto, sans-serif;
+  color: white;
+  line-height: 2;
+}
+.advant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: solid;
+  font-family: -apple-system, Roboto, sans-serif;
+  font-size: large;
+  padding: 15px 5px 15px 5px;
+}
+ul.advant {
+  padding: 20px 5px 20px 5px;
+}
+ul.advant li {
+  list-style-type: none;
+}
+.main_wrapper {
+  width: 100%;
+  height: 750px;
+  border: 2px solid black
+  margin: 0 auto;
+}
+table{
+border: 2px solid black;
+width: 100%;
+height: 750px;
+border-collapse: collapse;
+}
+td{
+  border: 2px solid black;
+  width: 33.33%;
+}
+.main_promo img{
+  width: 150px;
+  height: 150px;
+}
+.center-pic{
+  display:block;
+  margin:auto
+}
+p{
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
+.questions_h1 {
+background-color: darkblue;
+color: white;
+font-size: large;
+width: 50%;
+height: 30px;
+margin-top: 35px;
+}
+.map {
+  margin-top: 30px;
+}
+iframe {
+  width: 100%;
+}
+.footer_wrapper {
+  background: linear-gradient(rgb(97, 6, 6) ,black) ;
+  display: flex;
+}
+.contacts {
+  width: 50%;
+  display: flex;
+ justify-content: left;
+ align-items: flex-start;
+ flex-direction: column;
+}
+.contacts p {
+  color: white;
+}
+.contacts h3 {
+  color: darkred;
+}
+.points {
+  width: 50%;
+  display: flex;
+justify-content: right;
+align-items: flex-end;
+ flex-direction: column;
+ color: white;
+}
+
+
