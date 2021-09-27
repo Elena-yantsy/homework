@@ -1,6 +1,6 @@
 * {
   scroll-behavior: smooth;
-  margin: 40;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -11,6 +11,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
 }
 .logo img {
   width: 45px;
@@ -28,6 +34,7 @@
   padding-right: 80px;
 }
 form {
+  display: flex;
   position: relative;
   width: 200px;
   margin: 0;
@@ -35,16 +42,19 @@ form {
 input {
   width: 100%;
   height: 22px;
-  padding-left: 10px;
   border: 2px solid #7ba7ab;
   border-radius: 5px;
   outline: none;
   background-color: azure;
   color: black;
+  padding: 5px;
+  height: 30px;
+  font-size: 20px;
 }
 button {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
+  padding: 5px;
   border-radius: 5px;
   border: 2px solid #7ba7ab;
   background-color: azure;
@@ -66,10 +76,14 @@ button {
 }
 .joint {
   background-color: tomato;
-  height: 40px;
+  height: 50px;
   width: 200px;
-  font-size: x-large;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 5px;
 }
 .promo_slogan {
   display: flex;
@@ -89,6 +103,7 @@ button {
   border: solid;
   font-family: -apple-system, Roboto, sans-serif;
   padding: 10px 10px 10px 10px;
+  font-size: 20px;
 }
 .desicion {
   display: flex;
@@ -131,40 +146,40 @@ ul.advant li {
 .main_wrapper {
   width: 100%;
   height: 750px;
-  border: 2px solid black
+  border: 2px solid black;
   margin: 0 auto;
 }
-table{
-border: 2px solid black;
-width: 100%;
-height: 750px;
-border-collapse: collapse;
+table {
+  border: 2px solid black;
+  width: 100%;
+  height: 750px;
+  border-collapse: collapse;
 }
-td{
+td {
   border: 2px solid black;
   width: 33.33%;
 }
-.main_promo img{
+.main_promo img {
   width: 150px;
   height: 150px;
 }
-.center-pic{
-  display:block;
-  margin:auto
+.center-pic {
+  display: block;
+  margin: auto;
 }
-p{
+p {
   text-align: center;
 }
-h3{
+h3 {
   text-align: center;
 }
 .questions_h1 {
-background-color: darkblue;
-color: white;
-font-size: large;
-width: 50%;
-height: 30px;
-margin-top: 35px;
+  background-color: darkblue;
+  color: white;
+  font-size: large;
+  width: 50%;
+  height: 30px;
+  margin-top: 35px;
 }
 .map {
   margin-top: 30px;
@@ -173,15 +188,15 @@ iframe {
   width: 100%;
 }
 .footer_wrapper {
-  background: linear-gradient(rgb(97, 6, 6) ,black) ;
+  background: linear-gradient(rgb(97, 6, 6), black);
   display: flex;
 }
 .contacts {
   width: 50%;
   display: flex;
- justify-content: left;
- align-items: flex-start;
- flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: column;
 }
 .contacts p {
   color: white;
@@ -192,10 +207,8 @@ iframe {
 .points {
   width: 50%;
   display: flex;
-justify-content: right;
-align-items: flex-end;
- flex-direction: column;
- color: white;
+  justify-content: right;
+  align-items: flex-end;
+  flex-direction: column;
+  color: white;
 }
-
-
