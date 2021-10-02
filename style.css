@@ -1,8 +1,5 @@
-* {
-  scroll-behavior: smooth;
-  margin: 40;
-  padding: 0;
-  box-sizing: border-box;
+.wrapper {
+  border: 2px solid black;
 }
 .header {
   width: 100%;
@@ -22,20 +19,16 @@
   padding: 0 20px 0 20px;
   font-family: -apple-system, Roboto, sans-serif;
   font-weight: bold;
-  font-size: large;
+  font-size: 20px;
 }
 .search-box {
-  padding-right: 80px;
-}
-form {
-  position: relative;
-  width: 200px;
-  margin: 0;
+  padding-right: 20px;
+  display: inline;
 }
 input {
-  width: 100%;
+  width: 70%;
   height: 22px;
-  padding-left: 10px;
+  padding-left: 5px;
   border: 2px solid #7ba7ab;
   border-radius: 5px;
   outline: none;
@@ -43,8 +36,6 @@ input {
   color: black;
 }
 button {
-  position: absolute;
-  top: 0;
   border-radius: 5px;
   border: 2px solid #7ba7ab;
   background-color: azure;
@@ -60,7 +51,7 @@ button {
   align-items: center;
 }
 .h1 {
-  font-size: xx-large;
+  font-size: 30px;
   font-weight: bold;
   padding-bottom: 30px;
 }
@@ -68,7 +59,7 @@ button {
   background-color: tomato;
   height: 40px;
   width: 200px;
-  font-size: x-large;
+  font-size: 30px;
   text-align: center;
 }
 .promo_slogan {
@@ -77,16 +68,14 @@ button {
   align-items: center;
   width: 100%;
   height: 40px;
-  border: thin;
   background-color: darkblue;
   color: white;
   font-family: -apple-system, Roboto, sans-serif;
   text-align: center;
-  font-size: medium;
+  font-size: 20px;
   margin-top: 0px;
 }
 .article {
-  border: solid;
   font-family: -apple-system, Roboto, sans-serif;
   padding: 10px 10px 10px 10px;
 }
@@ -96,6 +85,9 @@ button {
   background-color: darkblue;
   color: white;
   align-items: center;
+}
+.desicion_search-box {
+  display: inline;
 }
 .footer {
   display: block;
@@ -114,57 +106,76 @@ button {
 }
 .advant {
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  border: solid;
   font-family: -apple-system, Roboto, sans-serif;
-  font-size: large;
-  padding: 15px 5px 15px 5px;
+  font-size: 20px;
 }
-ul.advant {
-  padding: 20px 5px 20px 5px;
-}
-ul.advant li {
+.advant li {
+  padding: 5px 0px 5px 0px;
   list-style-type: none;
 }
 .main_wrapper {
-  width: 100%;
-  height: 750px;
-  border: 2px solid black
-  margin: 0 auto;
-}
-table{
-border: 2px solid black;
-width: 100%;
-height: 750px;
-border-collapse: collapse;
-}
-td{
+  grid-template-areas:
+    "p1 p2 p3"
+    "p4 p5 p6";
+  display: grid;
   border: 2px solid black;
-  width: 33.33%;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  grid-auto-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: 50% 50%;
 }
-.main_promo img{
-  width: 150px;
-  height: 150px;
+.promo_first {
+  grid-area: p1;
+  border: 2px solid black;
+  padding-top: 10px;
 }
-.center-pic{
-  display:block;
-  margin:auto
+.promo_second {
+  grid-area: p2;
+  border: 2px solid black;
+  padding-top: 70px;
 }
-p{
+.promo_third {
+  grid-area: p3;
+  border: 2px solid black;
+  padding-top: 70px;
+}
+.promo_fouth {
+  grid: p4;
+  border: 2px solid black;
+}
+.promo_fifth {
+  grid: p5;
+  border: 2px solid black;
+}
+.promo_six {
+  grid: p6;
+  border: 2px solid black;
+}
+.main_promo img {
+  width: 110px;
+  height: 110px;
+}
+.center-pic {
+  display: block;
+  margin: auto;
+}
+p {
   text-align: center;
 }
-h3{
+h3 {
   text-align: center;
 }
 .questions_h1 {
-background-color: darkblue;
-color: white;
-font-size: large;
-width: 50%;
-height: 30px;
-margin-top: 35px;
+  background-color: darkblue;
+  color: white;
+  font-size: 20px;
+  width: 50%;
+  height: 30px;
+  margin-top: 35px;
 }
 .map {
   margin-top: 30px;
@@ -173,15 +184,16 @@ iframe {
   width: 100%;
 }
 .footer_wrapper {
-  background: linear-gradient(rgb(97, 6, 6) ,black) ;
+  background: linear-gradient(rgb(97, 6, 6), black);
   display: flex;
 }
 .contacts {
   width: 50%;
   display: flex;
- justify-content: left;
- align-items: flex-start;
- flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 20px;
 }
 .contacts p {
   color: white;
@@ -192,10 +204,9 @@ iframe {
 .points {
   width: 50%;
   display: flex;
-justify-content: right;
-align-items: flex-end;
- flex-direction: column;
- color: white;
+  justify-content: right;
+  align-items: flex-end;
+  flex-direction: column;
+  color: white;
+  padding-right: 20px;
 }
-
-
